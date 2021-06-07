@@ -5,5 +5,7 @@ const postSchema = new Schema ({
     content: { type: String, required: true},
     image: {type: String},
     createdAt: { type: Date, default: Date.now},
-    updatedAt: Date,
-})
+    updatedAt: {Date},
+});
+
+export default model("post",postSchema);
